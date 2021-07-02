@@ -1,4 +1,3 @@
-
 let chart1_2_options = {
   maintainAspectRatio: false,
   legend: {
@@ -48,7 +47,6 @@ let chart1_2_options = {
     ],
   },
 };
-
 
 let chartExample1 = {
   data1: (canvas) => {
@@ -122,7 +120,7 @@ let chartExample1 = {
       ],
       datasets: [
         {
-          label: "Participated students",
+          label: "My First dataset",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: "#1f8ef1",
@@ -167,7 +165,7 @@ let chartExample1 = {
       ],
       datasets: [
         {
-          label: "Participated students",
+          label: "Students participate in Hackthon",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: "#1f8ef1",
@@ -478,7 +476,6 @@ const studentsData = {
       company: "Thought Works",
       sal: "803.24",
     },
-   
   ],
 };
 module.exports = {

@@ -1,10 +1,7 @@
-
-import React,{useState} from "react";
+import React, { useState } from "react";
 import SimpleTable from "ToDoList/SimpleTable";
-import {
-  Row,
-} from "reactstrap";
-import BigChart from '../Graphs/BigChart'
+import { Row } from "reactstrap";
+import BigChart from "../Graphs/BigChart";
 import BarChart from "Graphs/BarChart";
 import LineChart from "Graphs/LineChart";
 import PieChart from "Graphs/PieChart";
@@ -14,28 +11,26 @@ import {
   chartExample3,
   chartExample4,
   studentsData,
-} from "variables/charts.js";
+} from "variables/Civildata.js";
 
-function Dashboard(props) {
-
+const Civil = () => {
   return (
     <>
       <div className="content">
         <Row>
-          <BigChart title={"Hackthon"} data={chartExample1} />
+          <BigChart title={"Civil Plans development"} data={chartExample1} />
         </Row>
         <Row>
           <BarChart data={chartExample3} />
-          <LineChart data={chartExample2}/>
-          <PieChart data={chartExample4}/>
+          <LineChart data={chartExample2} />
+          <PieChart data={chartExample4} />
         </Row>
         <Row>
-          <SimpleTable data={studentsData}/>
-        
+          <SimpleTable data={studentsData} />
         </Row>
       </div>
     </>
   );
-}
+};
 
-export default Dashboard;
+export default Civil;

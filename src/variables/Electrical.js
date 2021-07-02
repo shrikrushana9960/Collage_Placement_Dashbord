@@ -1,4 +1,3 @@
-
 let chart1_2_options = {
   maintainAspectRatio: false,
   legend: {
@@ -49,7 +48,6 @@ let chart1_2_options = {
   },
 };
 
-
 let chartExample1 = {
   data1: (canvas) => {
     let ctx = canvas.getContext("2d");
@@ -62,22 +60,17 @@ let chartExample1 = {
 
     return {
       labels: [
-        "INFOSYS",
-        "GOOGLE",
-        "TCS",
-        "COGNIZENT",
-        "IBM",
-        "Thought Works",
-        "ORACLE",
-        "HCL",
-        "HYPERLINK",
-        "WIPRO",
-        "FACEBOOK",
-        "AMAZON",
+        "ASUS",
+        "DELL",
+        "SAMSUMG",
+        "INTEL",
+        "IEEE Circuits",
+        "SNAPDRAGON"
+        
       ],
       datasets: [
         {
-          label: "Participated students",
+          label: "student participate",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: "#1f8ef1",
@@ -91,7 +84,7 @@ let chartExample1 = {
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
           pointRadius: 4,
-          data: [45, 30, 35, 30, 0, 45, 30, 50, 30, 45, 30, 30],
+          data: [45, 30, 35, 30, 0, 45],
         },
       ],
     };
@@ -106,23 +99,18 @@ let chartExample1 = {
     gradientStroke.addColorStop(0, "rgba(29,140,248,0)"); //blue colors
 
     return {
-      labels: [
-        "INFOSYS",
-        "GOOGLE",
-        "TCS",
-        "COGNIZENT",
-        "IBM",
-        "Thought Works",
-        "ORACLE",
-        "HCL",
-        "HYPERLINK",
-        "WIPRO",
-        "FACEBOOK",
-        "AMAZON",
+     labels: [
+        "ASUS",
+        "DELL",
+        "SAMSUMG",
+        "INTEL",
+        "IEEE Circuits",
+        "SNAPDRAGON"
+        
       ],
       datasets: [
         {
-          label: "Participated students",
+          label: "student participate",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: "#1f8ef1",
@@ -136,7 +124,7 @@ let chartExample1 = {
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
           pointRadius: 4,
-          data: [45, 33, 32, 40, 5, 55, 10, 60, 40, 45, 30, 60],
+          data: [45, 33, 32, 40, 5, 55],
         },
       ],
     };
@@ -152,22 +140,16 @@ let chartExample1 = {
 
     return {
       labels: [
-        "INFOSYS",
-        "GOOGLE",
-        "TCS",
-        "COGNIZENT",
-        "IBM",
-        "Thought Works",
-        "ORACLE",
-        "HCL",
-        "HYPERLINK",
-        "WIPRO",
-        "FACEBOOK",
-        "AMAZON",
+        "ASUS",
+        "DELL",
+        "SAMSUMG",
+        "INTEL",
+        "IEEE Circuits",
+        "SNAPDRAGON",
       ],
       datasets: [
         {
-          label: "Participated students",
+          label: "student participate",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: "#1f8ef1",
@@ -181,7 +163,7 @@ let chartExample1 = {
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
           pointRadius: 4,
-          data: [45, 30, 35, 30, 0, 45, 30, 50, 30, 45, 30, 30],
+          data: [45, 30, 35, 30, 0, 45],
         },
       ],
     };
@@ -196,23 +178,18 @@ let chartExample1 = {
     gradientStroke.addColorStop(0, "rgba(29,140,248,0)"); //blue colors
 
     return {
-      labels: [
-        "INFOSYS",
-        "GOOGLE",
-        "TCS",
-        "COGNIZENT",
-        "IBM",
-        "Thought Works",
-        "ORACLE",
-        "HCL",
-        "HYPERLINK",
-        "WIPRO",
-        "FACEBOOK",
-        "AMAZON",
+     labels: [
+        "ASUS",
+        "DELL",
+        "SAMSUMG",
+        "INTEL",
+        "IEEE Circuits",
+        "SNAPDRAGON"
+        
       ],
       datasets: [
         {
-          label: "Exam performane",
+          label: "student participate",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: "#1f8ef1",
@@ -226,7 +203,7 @@ let chartExample1 = {
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
           pointRadius: 4,
-          data: [45, 33, 32, 40, 5, 55, 10, 60, 40, 45, 30, 60],
+          data: [45, 33, 32, 40, 5, 40],
         },
       ],
     };
@@ -287,7 +264,13 @@ let chartExample3 = {
     gradientStroke.addColorStop(0, "rgba(119,52,169,0)"); //purple colors
 
     return {
-      labels: ["INFOSYS", "WIPRO", "AIMDOC", "CAPGIMINI", "COGNIZANT", "TCS"],
+      labels: [
+        "ASUS",
+        "DELL",
+        "SAMSUMG",
+        "INTEL",
+        "SNAPDRAGON",
+      ],
       datasets: [
         {
           label: "students",
@@ -298,7 +281,7 @@ let chartExample3 = {
           borderWidth: 2,
           borderDash: [],
           borderDashOffset: 0.0,
-          data: [53, 20, 10, 80, 100, 45],
+          data: [53, 20, 10, 80, 4, 45],
         },
       ],
     };
@@ -445,40 +428,39 @@ const studentsData = {
     {
       name: "ragiv shegal",
       year: "2019",
-      company: "TCS",
+      company: "LAVA",
       sal: "803.24",
     },
     {
       name: "ravi shegal",
       year: "2019",
-      company: "TCS",
+      company: "MICROMAX",
       sal: "803.24",
     },
     {
       name: "aditi bindra",
       year: "2019",
-      company: "TCS",
+      company: "INTEL",
       sal: "803.24",
     },
     {
       name: "neha Rajput",
       year: "2019",
-      company: "TCS",
+      company: "INTEL",
       sal: "803.24",
     },
     {
       name: "vikas jadhav",
       year: "2019",
-      company: "TCS",
+      company: "ASUS",
       sal: "803.24",
     },
     {
       name: "Pooja warma",
-      year: "2019",
-      company: "Thought Works",
+      year: "2020",
+      company: "MIDEA-TAKE",
       sal: "803.24",
     },
-   
   ],
 };
 module.exports = {

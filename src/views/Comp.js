@@ -1,10 +1,7 @@
-
-import React,{useState} from "react";
+import React, { useState } from "react";
 import SimpleTable from "ToDoList/SimpleTable";
-import {
-  Row,
-} from "reactstrap";
-import BigChart from '../Graphs/BigChart'
+import { Row } from "reactstrap";
+import BigChart from "../Graphs/BigChart";
 import BarChart from "Graphs/BarChart";
 import LineChart from "Graphs/LineChart";
 import PieChart from "Graphs/PieChart";
@@ -16,8 +13,7 @@ import {
   studentsData,
 } from "variables/charts.js";
 
-function Dashboard(props) {
-
+function Comp(props) {
   return (
     <>
       <div className="content">
@@ -26,16 +22,15 @@ function Dashboard(props) {
         </Row>
         <Row>
           <BarChart data={chartExample3} />
-          <LineChart data={chartExample2}/>
-          <PieChart data={chartExample4}/>
+          <LineChart data={chartExample2} />
+          <PieChart data={chartExample4} />
         </Row>
         <Row>
-          <SimpleTable data={studentsData}/>
-        
+          <SimpleTable data={studentsData} />
         </Row>
       </div>
     </>
   );
 }
 
-export default Dashboard;
+export default Comp;

@@ -1,4 +1,3 @@
-
 let chart1_2_options = {
   maintainAspectRatio: false,
   legend: {
@@ -49,7 +48,6 @@ let chart1_2_options = {
   },
 };
 
-
 let chartExample1 = {
   data1: (canvas) => {
     let ctx = canvas.getContext("2d");
@@ -62,18 +60,12 @@ let chartExample1 = {
 
     return {
       labels: [
-        "INFOSYS",
-        "GOOGLE",
-        "TCS",
-        "COGNIZENT",
-        "IBM",
-        "Thought Works",
-        "ORACLE",
-        "HCL",
-        "HYPERLINK",
-        "WIPRO",
-        "FACEBOOK",
-        "AMAZON",
+        "TATA MOTOR",
+        "BAJAJ",
+        "JOHN DEER",
+        "MERCEDEZ",
+        "BMW",
+        
       ],
       datasets: [
         {
@@ -91,7 +83,7 @@ let chartExample1 = {
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
           pointRadius: 4,
-          data: [45, 30, 35, 30, 0, 45, 30, 50, 30, 45, 30, 30],
+          data: [45, 30, 35, 30, 0],
         },
       ],
     };
@@ -106,20 +98,7 @@ let chartExample1 = {
     gradientStroke.addColorStop(0, "rgba(29,140,248,0)"); //blue colors
 
     return {
-      labels: [
-        "INFOSYS",
-        "GOOGLE",
-        "TCS",
-        "COGNIZENT",
-        "IBM",
-        "Thought Works",
-        "ORACLE",
-        "HCL",
-        "HYPERLINK",
-        "WIPRO",
-        "FACEBOOK",
-        "AMAZON",
-      ],
+      labels: ["TATA MOTOR", "BAJAJ", "JOHN DEER", "MERCEDEZ", "BMW"],
       datasets: [
         {
           label: "Participated students",
@@ -136,7 +115,7 @@ let chartExample1 = {
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
           pointRadius: 4,
-          data: [45, 33, 32, 40, 5, 55, 10, 60, 40, 45, 30, 60],
+          data: [45, 33, 32, 40, 5],
         },
       ],
     };
@@ -151,20 +130,39 @@ let chartExample1 = {
     gradientStroke.addColorStop(0, "rgba(29,140,248,0)"); //blue colors
 
     return {
-      labels: [
-        "INFOSYS",
-        "GOOGLE",
-        "TCS",
-        "COGNIZENT",
-        "IBM",
-        "Thought Works",
-        "ORACLE",
-        "HCL",
-        "HYPERLINK",
-        "WIPRO",
-        "FACEBOOK",
-        "AMAZON",
+      labels: ["TATA MOTOR", "BAJAJ", "JOHN DEER", "MERCEDEZ", "BMW"],
+      datasets: [
+        {
+          label: "Students participate ",
+          fill: true,
+          backgroundColor: gradientStroke,
+          borderColor: "#1f8ef1",
+          borderWidth: 2,
+          borderDash: [],
+          borderDashOffset: 0.0,
+          pointBackgroundColor: "#1f8ef1",
+          pointBorderColor: "rgba(255,255,255,0)",
+          pointHoverBackgroundColor: "#1f8ef1",
+          pointBorderWidth: 20,
+          pointHoverRadius: 4,
+          pointHoverBorderWidth: 15,
+          pointRadius: 4,
+          data: [45, 30, 35, 30, 0],
+        },
       ],
+    };
+  },
+  data4: (canvas) => {
+    let ctx = canvas.getContext("2d");
+
+    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
+
+    gradientStroke.addColorStop(1, "rgba(29,140,248,0.2)");
+    gradientStroke.addColorStop(0.4, "rgba(29,140,248,0.0)");
+    gradientStroke.addColorStop(0, "rgba(29,140,248,0)"); //blue colors
+
+    return {
+      labels: ["TATA MOTOR", "BAJAJ", "JOHN DEER", "MERCEDEZ", "BMW"],
       datasets: [
         {
           label: "Participated students",
@@ -181,52 +179,7 @@ let chartExample1 = {
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
           pointRadius: 4,
-          data: [45, 30, 35, 30, 0, 45, 30, 50, 30, 45, 30, 30],
-        },
-      ],
-    };
-  },
-  data4: (canvas) => {
-    let ctx = canvas.getContext("2d");
-
-    let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
-
-    gradientStroke.addColorStop(1, "rgba(29,140,248,0.2)");
-    gradientStroke.addColorStop(0.4, "rgba(29,140,248,0.0)");
-    gradientStroke.addColorStop(0, "rgba(29,140,248,0)"); //blue colors
-
-    return {
-      labels: [
-        "INFOSYS",
-        "GOOGLE",
-        "TCS",
-        "COGNIZENT",
-        "IBM",
-        "Thought Works",
-        "ORACLE",
-        "HCL",
-        "HYPERLINK",
-        "WIPRO",
-        "FACEBOOK",
-        "AMAZON",
-      ],
-      datasets: [
-        {
-          label: "Exam performane",
-          fill: true,
-          backgroundColor: gradientStroke,
-          borderColor: "#1f8ef1",
-          borderWidth: 2,
-          borderDash: [],
-          borderDashOffset: 0.0,
-          pointBackgroundColor: "#1f8ef1",
-          pointBorderColor: "rgba(255,255,255,0)",
-          pointHoverBackgroundColor: "#1f8ef1",
-          pointBorderWidth: 20,
-          pointHoverRadius: 4,
-          pointHoverBorderWidth: 15,
-          pointRadius: 4,
-          data: [45, 33, 32, 40, 5, 55, 10, 60, 40, 45, 30, 60],
+          data: [45, 33, 32, 40, 5],
         },
       ],
     };
@@ -287,7 +240,7 @@ let chartExample3 = {
     gradientStroke.addColorStop(0, "rgba(119,52,169,0)"); //purple colors
 
     return {
-      labels: ["INFOSYS", "WIPRO", "AIMDOC", "CAPGIMINI", "COGNIZANT", "TCS"],
+      labels: ["TATA MOTOR", "BAJAJ", "JOHN DEER", "MERCEDEZ", "BMW"],
       datasets: [
         {
           label: "students",
@@ -298,7 +251,7 @@ let chartExample3 = {
           borderWidth: 2,
           borderDash: [],
           borderDashOffset: 0.0,
-          data: [53, 20, 10, 80, 100, 45],
+          data: [53, 20, 10, 80, 100],
         },
       ],
     };
@@ -445,40 +398,39 @@ const studentsData = {
     {
       name: "ragiv shegal",
       year: "2019",
-      company: "TCS",
+      company: "TATA MOTOR",
       sal: "803.24",
     },
     {
       name: "ravi shegal",
       year: "2019",
-      company: "TCS",
+      company: "TATA MOTOR",
       sal: "803.24",
     },
     {
       name: "aditi bindra",
       year: "2019",
-      company: "TCS",
+      company: "TATA MOTORS",
       sal: "803.24",
     },
     {
       name: "neha Rajput",
       year: "2019",
-      company: "TCS",
+      company: "TATA MOTOR",
       sal: "803.24",
     },
     {
       name: "vikas jadhav",
       year: "2019",
-      company: "TCS",
+      company: "TATA MOTOR",
       sal: "803.24",
     },
     {
       name: "Pooja warma",
       year: "2019",
-      company: "Thought Works",
+      company: "BAJAJ",
       sal: "803.24",
     },
-   
   ],
 };
 module.exports = {

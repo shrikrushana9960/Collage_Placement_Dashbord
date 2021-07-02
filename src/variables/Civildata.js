@@ -1,4 +1,3 @@
-
 let chart1_2_options = {
   maintainAspectRatio: false,
   legend: {
@@ -49,7 +48,6 @@ let chart1_2_options = {
   },
 };
 
-
 let chartExample1 = {
   data1: (canvas) => {
     let ctx = canvas.getContext("2d");
@@ -62,18 +60,18 @@ let chartExample1 = {
 
     return {
       labels: [
-        "INFOSYS",
-        "GOOGLE",
-        "TCS",
-        "COGNIZENT",
-        "IBM",
-        "Thought Works",
-        "ORACLE",
-        "HCL",
+        "T&T Infra",
+        "Akme Projects",
+        "L&T ",
+        "Arup",
+        "Mott McDonald",
+        "Stantec",
+        "Balfour Beatty",
+        "Bechtel",
         "HYPERLINK",
-        "WIPRO",
-        "FACEBOOK",
-        "AMAZON",
+        "Skanska",
+        "Reliance Infrastructure",
+        "Jindal ",
       ],
       datasets: [
         {
@@ -107,22 +105,22 @@ let chartExample1 = {
 
     return {
       labels: [
-        "INFOSYS",
-        "GOOGLE",
-        "TCS",
-        "COGNIZENT",
-        "IBM",
-        "Thought Works",
-        "ORACLE",
-        "HCL",
+        "T&T Infra",
+        "Akme Projects",
+        "L&T ",
+        "Arup",
+        "Mott McDonald",
+        "Stantec",
+        "Balfour Beatty",
+        "Bechtel",
         "HYPERLINK",
-        "WIPRO",
-        "FACEBOOK",
-        "AMAZON",
+        "Skanska",
+        "Reliance Infrastructure",
+        "Jindal ",
       ],
       datasets: [
         {
-          label: "Participated students",
+          label: "student participed",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: "#1f8ef1",
@@ -152,22 +150,22 @@ let chartExample1 = {
 
     return {
       labels: [
-        "INFOSYS",
-        "GOOGLE",
-        "TCS",
-        "COGNIZENT",
-        "IBM",
-        "Thought Works",
-        "ORACLE",
-        "HCL",
+        "T&T Infra",
+        "Akme Projects",
+        "L&T ",
+        "Arup",
+        "Mott McDonald",
+        "Stantec",
+        "Balfour Beatty",
+        "Bechtel",
         "HYPERLINK",
-        "WIPRO",
-        "FACEBOOK",
-        "AMAZON",
+        "Skanska",
+        "Reliance Infrastructure",
+        "Jindal ",
       ],
       datasets: [
         {
-          label: "Participated students",
+          label: "Students participate ",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: "#1f8ef1",
@@ -197,22 +195,22 @@ let chartExample1 = {
 
     return {
       labels: [
-        "INFOSYS",
-        "GOOGLE",
-        "TCS",
-        "COGNIZENT",
-        "IBM",
-        "Thought Works",
-        "ORACLE",
-        "HCL",
+        "T&T Infra",
+        "Akme Projects",
+        "L&T ",
+        "Arup",
+        "Mott McDonald",
+        "Stantec",
+        "Balfour Beatty",
+        "Bechtel",
         "HYPERLINK",
-        "WIPRO",
-        "FACEBOOK",
-        "AMAZON",
+        "Skanska",
+        "Reliance Infrastructure",
+        "Jindal ",
       ],
       datasets: [
         {
-          label: "Exam performane",
+          label: "participted students",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: "#1f8ef1",
@@ -287,7 +285,15 @@ let chartExample3 = {
     gradientStroke.addColorStop(0, "rgba(119,52,169,0)"); //purple colors
 
     return {
-      labels: ["INFOSYS", "WIPRO", "AIMDOC", "CAPGIMINI", "COGNIZANT", "TCS"],
+     labels: [
+        "T&T Infra",
+        "Akme Projects",
+        "L&T ",
+        "Arup",
+        "Mott McDonald",
+        "Stantec",
+        
+      ],
       datasets: [
         {
           label: "students",
@@ -445,40 +451,39 @@ const studentsData = {
     {
       name: "ragiv shegal",
       year: "2019",
-      company: "TCS",
-      sal: "803.24",
+      company: "T&T Infra",
+      sal: "403.24",
     },
     {
       name: "ravi shegal",
       year: "2019",
-      company: "TCS",
-      sal: "803.24",
+      company: "T&T Infra",
+      sal: "403.24",
     },
     {
       name: "aditi bindra",
       year: "2019",
-      company: "TCS",
+      company: "L&T construction",
       sal: "803.24",
     },
     {
       name: "neha Rajput",
       year: "2019",
-      company: "TCS",
+      company: "L&T construction",
       sal: "803.24",
     },
     {
       name: "vikas jadhav",
       year: "2019",
-      company: "TCS",
+      company: "L&T construction",
       sal: "803.24",
     },
     {
       name: "Pooja warma",
       year: "2019",
-      company: "Thought Works",
+      company: "Tata Construction",
       sal: "803.24",
     },
-   
   ],
 };
 module.exports = {

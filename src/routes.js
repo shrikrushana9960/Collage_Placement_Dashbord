@@ -1,62 +1,62 @@
-/*!
 
-=========================================================
-* Black Dashboard React v1.2.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/black-dashboard-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/black-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import Dashboard from "views/Dashboard.js";
 import Icons from "views/Icons.js";
 import Map from "views/Map.js";
+import Expences from "views/Expences";
 import Notifications from "views/Notifications.js";
 import Rtl from "views/Rtl.js";
 import TableList from "views/TableList.js";
 import Typography from "views/Typography.js";
 import UserProfile from "views/UserProfile.js";
+import Mech from "views/Mech";
+import Electrical from "views/Electrical";
+import ENTC from "views/ENTC";
+import Civil from "views/Civil";
+import Comp from "views/Comp";
 
 var routes = [
+  
   {
-    path: "/dashboard",
-    name: "Dashboard",
-    rtlName: "لوحة القيادة",
-    icon: "tim-icons icon-chart-pie-36",
-    component: Dashboard,
+    path: "/mech",
+    name: "Mechnical",
+    rtlName: "Mechnical",
+    icon: "tim-icons icon-settings-gear-63",
+    component: Mech,
     layout: "/admin",
   },
   {
-    path: "/icons",
-    name: "Icons",
-    rtlName: "الرموز",
-    icon: "tim-icons icon-atom",
-    component: Icons,
+    path: "/comp",
+    name: "Computer",
+    rtlName: "comp",
+    icon: "tim-icons icon-laptop",
+    component: Comp,
     layout: "/admin",
   },
   {
-    path: "/map",
-    name: "Map",
-    rtlName: "خرائط",
-    icon: "tim-icons icon-pin",
-    component: Map,
+    path: "/entc",
+    name: "ENTC",
+    rtlName: "ENTC",
+    icon: "tim-icons icon-settings",
+    component: ENTC,
     layout: "/admin",
   },
   {
-    path: "/notifications",
-    name: "Notifications",
-    rtlName: "إخطارات",
-    icon: "tim-icons icon-bell-55",
-    component: Notifications,
+    path: "/civil",
+    name: "Civil",
+    rtlName: "Civil",
+    icon: "tim-icons icon-istanbul",
+    component: Civil,
     layout: "/admin",
   },
+  {
+    path: "/electrical",
+    name: "Electrical",
+    rtlName: "ENTC",
+    icon: "tim-icons icon-tv-2",
+    component: Electrical,
+    layout: "/admin",
+  },
+  
   {
     path: "/user-profile",
     name: "User Profile",
@@ -65,29 +65,6 @@ var routes = [
     component: UserProfile,
     layout: "/admin",
   },
-  {
-    path: "/tables",
-    name: "Table List",
-    rtlName: "قائمة الجدول",
-    icon: "tim-icons icon-puzzle-10",
-    component: TableList,
-    layout: "/admin",
-  },
-  {
-    path: "/typography",
-    name: "Typography",
-    rtlName: "طباعة",
-    icon: "tim-icons icon-align-center",
-    component: Typography,
-    layout: "/admin",
-  },
-  {
-    path: "/rtl-support",
-    name: "RTL Support",
-    rtlName: "ار تي ال",
-    icon: "tim-icons icon-world",
-    component: Rtl,
-    layout: "/rtl",
-  },
+  
 ];
 export default routes;
