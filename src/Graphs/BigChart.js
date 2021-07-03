@@ -50,7 +50,7 @@ const BigChart = ({data,title}) => {
                       First Year
                     </span>
                     <span className="d-block d-sm-none">
-                      <i className="tim-icons icon-single-02" />
+                      <i className="tim-icons icon-gift-2" />
                     </span>
                   </Button>
                   <Button
